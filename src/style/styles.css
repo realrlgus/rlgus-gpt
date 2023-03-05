@@ -1,31 +1,34 @@
-.bg-blue {
-  background-color: blue;
+:root {
+  --dcinside-blue: #3b4890;
 }
 
-.bg-red {
-  background-color: red;
-  color: aqua;
-  margin-top: 80px;
-  padding-top: 80px;
-  border: 10px solid gold;
+.bar {
+  background-color: var(--dcinside-blue);
 }
 
-.big-text {
-  font-size: 18pt;
+.parent {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
 }
 
-a {
-  background-color: #66c971;
-  text-decoration: none;
-  color: black;
-  padding: 50px;
+.parent div {
+  color: white;
   font-weight: bold;
-  border-radius: 60px;
-  display: block;
-  text-align: center;
+  font-size: 10pt;
+}
+.parent div:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-a:hover {
-  color: #66c971;
-  background-color: black;
+.mini::after {
+  content: "";
+  display: inline-block;
+  background-color: red;
+  width: 2px;
+  height: 15px;
+  vertical-align: -3px;
+  margin-left: 10px;
+  margin-right: -10px;
 }
